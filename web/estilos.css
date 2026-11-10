@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #102a43;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #102a43;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #dce8f2;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #58a6e7;
+}
+
+.portada {
+    min-height: 480px;
+    background:
+        linear-gradient(
+            rgba(16, 42, 67, 0.85),
+            rgba(16, 42, 67, 0.85)
+        ),
+        url("portada.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10%;
+}
+
+.portada span {
+    color: #58a6e7;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.portada h2 {
+    font-size: 48px;
+    max-width: 700px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.portada p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 600px;
+    color: #e5edf5;
+}
+
+.titulo-seccion {
+    margin-bottom: 35px;
+}
+
+.titulo-seccion span {
+    color: #1765a5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-seccion h2 {
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+.titulo-seccion p {
+    color: #52677a;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.infraestructura {
+    padding: 80px 7%;
+}
+
+.intro-infraestructura {
+    max-width: 700px;
+    line-height: 1.8;
+    color: #52677a;
+    margin-bottom: 35px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.espacio {
+    position: relative;
+    min-height: 280px;
+    overflow: hidden;
+    background-color: #dce8f2;
+}
+
+.espacio img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+}
+
+.espacio:hover img {
+    transform: scale(1.04);
+}
+
+.descripcion-espacio {
+    background-color: #102a43;
+    color: white;
+    padding: 20px;
+}
+
+.descripcion-espacio h3 {
+    margin-bottom: 8px;
+}
+
+.descripcion-espacio p {
+    color: #dce8f2;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.materias {
+    padding: 80px 7%;
+}
+
+.introduccion-materias {
+    color: #52677a;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.anio {
+    border-bottom: 1px solid #c5d5e3;
+    padding: 20px 0;
+}
+
+.anio summary {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #102a43;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.anio summary::after {
+    content: "+";
+    color: #1765a5;
+    font-size: 27px;
+}
+
+.anio[open] summary::after {
+    content: "−";
+}
+
+.lista-materias {
+    padding: 20px 0 5px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.lista-materias li {
+    color: #52677a;
+    line-height: 1.5;
+}
+
+.asistente {
+    background-color: #102a43;
+    color: white;
+    padding: 85px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.asistente-presentacion span {
+    color: #58a6e7;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.asistente-presentacion h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.asistente-presentacion p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e5edf5;
+}
+
+#robo {
+    max-width: 500px;
+    width: 100%;
+    border: 2px solid #2676c9;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+    color: #102a43;
+}
+
+.chat-encabezado {
+    background-color: #1765a5;
+    color: white;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icono-bot {
+    background-color: #102a43;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chat-encabezado p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#robo-mensajes {
+    height: 340px;
+    overflow-y: auto;
+    padding: 15px;
+    background-color: #edf3f8;
+}
+
+.robo-msg {
+    margin: 8px 0;
+    padding: 10px 13px;
+    border-radius: 10px;
+    max-width: 88%;
+    width: fit-content;
+    white-space: pre-line;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+    font-size: 14px;
+}
+
+.robo-usuario {
+    background-color: #1765a5;
+    color: white;
+    margin-left: auto;
+}
+
+.robo-bot {
+    background-color: white;
+    border: 1px solid #c5d9e5;
+    color: #102a43;
+}
+
+#robo-entrada {
+    display: flex;
+    border-top: 1px solid #c5d9e5;
+    background-color: white;
+}
+
+#robo-texto {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #102a43;
+}
+
+#robo-enviar {
+    padding: 0 18px;
+    border: none;
+    background-color: #1765a5;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+#robo-enviar:hover {
+    background-color: #102a43;
+}
+
+footer {
+    background-color: #081d30;
+    color: white;
+    padding: 35px 7%;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #dce8f2;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .portada h2 {
+        font-size: 35px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .asistente {
+        grid-template-columns: 1fr;
+        padding: 60px 7%;
+    }
+
+    .asistente-presentacion h2 {
+        font-size: 32px;
+    }
+
+    .lista-materias {
+        grid-template-columns: 1fr;
+    }
+}
